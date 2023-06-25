@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ub-g12-bionlp"
+version = "0.1.0"
+description = ""
+authors = ["fusedbloxxer <voidwarden@yahoo.com>"]
+readme = "README.md"
+packages = [{include = "ub_g12_bionlp"}]
+
+[tool.poetry.dependencies]
+python = "3.10.9"
+torch = {version = "^2.0.1+cu118", source = "torch-cuda"}
+
+
+[[tool.poetry.source]]
+name = "torch-cuda"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
