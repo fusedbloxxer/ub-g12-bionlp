@@ -7,8 +7,28 @@ readme = "README.md"
 packages = [{include = "ub_g12_bionlp"}]
 
 [tool.poetry.dependencies]
-python = "3.10.9"
+python = ">=3.9, <=3.10.9"
 torch = {version = "^2.0.1+cu118", source = "torch-cuda"}
+numpy = "^1.25.0"
+pandas = "^2.0.2"
+scipy = "^1.11.0"
+transformers = "^4.30.2"
+matplotlib = "^3.7.1"
+nvitop = "^1.1.2"
+ipykernel = "^6.23.3"
+evaluate = "^0.4.0"
+rouge-score = "^0.1.2"
+spacy = "^3.5.3"
+sacremoses = "^0.0.53"
+accelerate = "^0.20.3"
+sentencepiece = "^0.1.99"
+protobuf = "3.20.0"
+nvidia-ml-py3 = "^7.352.0"
+wandb = "^0.15.4"
+nltk = "^3.8.1"
+ipywidgets = "^8.0.6"
+bleurt = {git = "https://github.com/google-research/bleurt.git"}
+bert-score = "^0.3.13"
 
 
 [[tool.poetry.source]]
